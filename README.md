@@ -130,12 +130,9 @@ Essa etapa teve como objetivo investigar:
 ├── mse por areas.py           # Cálculo da Entropia Multiescalar por região cerebral
 ├── normality_test.py          # Teste de normalidade (Kolmogorov-Smirnov)
 ├── dados/
-│   ├── Controle/
-│   └── Depressao/
+│   ├── Ocultados por motivos de privacidade
 ├── resultados/
-│   ├── mse/
-│   ├── normalidade/
-│   └── anova/
+│   ├── Ocultados por motivos de privacidade
 └── README.md
 ```
 
