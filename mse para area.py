@@ -3,7 +3,7 @@ import numpy as np
 import os
 from scipy.spatial.distance import pdist
 
-pasta = "C:/Users/DELL/Documents/BACK UP GIMAR/OneDrive/Documentos/Faculdade/IC/Controle"
+pasta = "pasta_caminho"
 sujeitos = os.listdir(pasta)
 
 global tau
@@ -39,7 +39,7 @@ def multiscaleSampleEntropy(x, m, r, tau):
    return e  # , A, B
 
 for sujeito in sujeitos:
-    eeg = pd.read_csv(f"C:/Users/DELL/Documents/BACK UP GIMAR/OneDrive/Documentos/Faculdade/IC/Controle/{sujeito}", sep='\t')
+    eeg = pd.read_csv(f"pasta_caminho{sujeito}", sep='\t')
     mse = np.zeros((scales, len(eeg.columns)))
     tamanho_N = int(len(eeg) / 4)
 
@@ -95,6 +95,6 @@ for idx, regiao in enumerate(regioes, start = 1):
     # Renomeia as colunas usando o método rename
     regiao.columns = sujeitos
     nome_arquivo = f"mse_area_controle_{idx}.txt"
-    caminho_arquivo = os.path.join('C:/Users/DELL/Documents/BACK UP GIMAR/OneDrive/Documentos/Faculdade/IC/mse por area - controle - verdadeiro', nome_arquivo)
+    caminho_arquivo = os.path.join('pasta_caminho', nome_arquivo)
     regiao.to_csv(caminho_arquivo, sep='\t', index=False)
     print(regiao)
