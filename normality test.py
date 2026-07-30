@@ -2,11 +2,11 @@ import pandas as pd
 from scipy.stats import kstest
 
 # Lendo os arquivos Excel
-F = pd.read_excel('C:/Users/DELL/Documents/BACK UP GIMAR/OneDrive/Documentos/Faculdade/IC/SamPen - F.xlsx')
-CP = pd.read_excel('C:/Users/DELL/Documents/BACK UP GIMAR/OneDrive/Documentos/Faculdade/IC/SampEn - CP.xlsx')
-O = pd.read_excel('C:/Users/DELL/Documents/BACK UP GIMAR/OneDrive/Documentos/Faculdade/IC/SampEn - O.xlsx')
-TD = pd.read_excel('C:/Users/DELL/Documents/BACK UP GIMAR/OneDrive/Documentos/Faculdade/IC/SampEn - TD.xlsx')
-TE = pd.read_excel('C:/Users/DELL/Documents/BACK UP GIMAR/OneDrive/Documentos/Faculdade/IC/SampEn - TE.xlsx')
+F = pd.read_excel('pasta_caminho')
+CP = pd.read_excel('pasta_caminho')
+O = pd.read_excel('pasta_caminho')
+TD = pd.read_excel('pasta_caminho')
+TE = pd.read_excel('pasta_caminho)
 
 # Definindo as escalas
 escalas = F.columns[1:]
